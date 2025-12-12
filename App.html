@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Jack Druyon - Resume</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            /* Styles for the joke generator */
+            .joke-container {
+                background: #fff;
+                padding: 30px 40px;
+                border-radius: 12px;
+                box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+                text-align: center;
+                margin-top: 50px;
+            }
+            .joke-container h2 {
+                font-family: 'Georgia', serif;
+                color: #2c3e50;
+            }
+            .joke-container button {
+                background: #2c3e50;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                margin-top: 20px;
+                font-size: 16px;
+                border-radius: 6px;
+                cursor: pointer;
+                transition: background 0.3s;
+            }
+            .joke-container button:hover {
+                background: #34495e;
+            }
+            .joke-container p.joke {
+                font-style: italic;
+                color: #e74c3c;
+                font-size: 18px;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Jack Druyon</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="Index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="Education.html">Education</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="Experience.html">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="Skills.html">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="Contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="Scratch.html">Scratch</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="App.html">AI App</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/govna.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="page-heading">
+                            <h1>AI App</h1>
+                            <span class="subheading">Ello Govna Joke Generator</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                       <p>For my AI App, I wanted to do a different take on a Joke Generator. I created a British-themed joke generator that uses a British-isms as jokes. It's supposed to be funny, but that's up to you to decide</p>
+
+                        <!-- Joke Generator Section -->
+                        <div class="joke-container">
+                            <h2>Oi! 'Ello Govna Joke Generator</h2>
+                            <p>Feeling cheeky? Click below for some proper English banter!</p>
+                            <button onclick="generateJoke()">Generate a Joke</button>
+                            <p class="joke" id="jokeDisplay">Your joke will appear here, mate!</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item"><a href="#!"><span class="fa-stack fa-lg"></span></a></li>
+                            <li class="list-inline-item"><a href="#!"><span class="fa-stack fa-lg"></span></a></li>
+                            <li class="list-inline-item"><a href="#!"><span class="fa-stack fa-lg"></span></a></li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Jack Druyon Enterprises</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script>
+            // Joke generator script
+            const jokes = [
+                "Why did the London cabbie refuse to play cards? He didn’t fancy being dealt with!",
+                "What’s a cabbie’s favourite tea? Earl Grey, naturally!",
+                "Why don’t London cabs ever get lost? Because they’ve got the Queen’s bearings!",
+                "Why did the cabbie bring a ladder? To reach the high street fares!",
+                "How does a London cabbie ask for directions? 'Oi mate, where’s the nearest pub?'",
+                "Why do cabbies make terrible comedians? Because their jokes take too long to arrive!",
+                "What did the cabbie say when he ran out of petrol? 'Blimey, that’s a bit of a pickle!'",
+                "Why did the cabbie carry a map? In case the GPS got a bit cheeky!",
+                "Why did the cabbie wear a bowler hat? To keep a lid on his fares!",
+                "What’s a cabbie’s favourite musical? The Sound of Moneeey!",
+                "Why did the cabbie cross the road? To get to the pub before last call!",
+                "Why are London cabs so polite? They always say 'fare well'!",
+                "How do cabbies stay in shape? They do a lot of fare-robics!",
+                "Why did the cabbie sit at the bus stop? He wanted to pick up some tips!",
+                "Why don’t cabbies ever play football? Too many parking tickets on the field!",
+                "What’s the cabbie’s favourite dessert? Sticky fares pudding!",
+                "Why did the cabbie bring a trumpet? To toot his own horn!",
+                "How do cabbies tell secrets? Whisper ‘round the fare-meter!",
+                "Why did the cabbie take a nap on the steering wheel? He wanted to rest in peace of traffic!",
+                "Why do cabbies love rainy days? It’s when the fares really pour in!",
+                "What do cabbies call a short trip? A quick spin on the Queen’s roads!",
+                "Why did the cabbie take a dictionary? To get the meaning of fare-play!",
+                "How do cabbies celebrate Christmas? With a mince fare pie!",
+                "Why do cabbies love tea breaks? They get to steep in traffic gossip!",
+                "What did the cabbie say at the fancy restaurant? 'I’ll have the fare-delicous special!'",
+                "Why did the cabbie bring a broom? To sweep the fares off the streets!",
+                "Why did the cabbie join the choir? He wanted to belt out ‘Cab fare-lujah!’",
+                "What do cabbies say when the GPS is wrong? 'Blimey, that’s a twist in me fare-path!'"
+            ];
+
+            function generateJoke() {
+                const randomIndex = Math.floor(Math.random() * jokes.length);
+                document.getElementById("jokeDisplay").textContent = jokes[randomIndex];
+            }
+        </script>
+    </body>
+</html>
